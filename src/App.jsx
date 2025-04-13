@@ -7,7 +7,7 @@ function App() {
   const [locations, setLocations] = useState([]);
 
   useEffect(() => {
-    fetch('../public/Housing_data2.csv')
+    fetch('Housing_data2.csv')
       .then((response) => response.text())
       .then((data) => {
         const rows = data.split('\n').slice(1); // skip header
