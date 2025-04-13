@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [locations, setLocations] = useState([]);
+  
 
   useEffect(() => {
     fetch('Housing_data2.csv')
