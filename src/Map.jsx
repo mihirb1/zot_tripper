@@ -42,7 +42,7 @@ function Map() {
 
   // Load CSV and store a map of address -> location info
   useEffect(() => {
-    fetch('../public/Addresses_with_type.csv')
+    fetch('Addresses_with_type.csv')
       .then((response) => response.text())
       .then((data) => {
         const rows = data.split('\n').slice(1);
